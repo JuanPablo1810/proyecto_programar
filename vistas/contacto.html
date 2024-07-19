@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shorcut icon" href="./img/icono hotel.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--el CSS siempre debe quedar último-->
+    <link rel="stylesheet" href="../estilos/css/styles.css">
+    
+</head>
+<body>
+   <header>
+      <nav>
+          <!--vamos a construir el menú-->
+          <a href="../index.html"><img src="../img/icono hotel.jpg" alt="logo de la empresa"></a>
+          <ul>
+              <li><a href="./nosotros.html">Nosotros</a></li>
+              <li><a href="./propuesta_informativa.html">Propuesta</a></li>
+              <li><a href="./proyecto.html">Proyecto</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+              <!--enlace absoluto-->
+              <li><a href="https://plataforma-beta.coderhouse.com/">Plataforma</a></li>
+          </ul>
+      </nav>
+  </header>
+
+   <hr>
+<!--el numeral y el get es lo mismo que no pasarle nada-->
+    <form action="" method="GET" enctype="text/plain">
+      <fieldset>
+         <legend>Info Personal</legend>
+        <div>
+           <label for="name">Nombre y Apellido</label>
+           <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+        </div>
+        <div>
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+           <label for="age">Edad</label>
+           <input type="number" name="age" id="age" min="1" max="200">
+        </div>
+        <div>
+           <label for="date">Fecha de Nacimiento</label>
+           <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        <div>
+           <strong>Fruta Favorita</strong>
+           <div>
+              <label for="banana">Banana</label>
+              <input type="checkbox" name="banana" id="banana">
+           </div>
+           <div>
+              <label for="apple">Manzana</label>
+              <input type="checkbox" name="apple" id="apple">
+           </div>
+        </div>
+        <div>
+           <strong>Genero</strong>
+           <div>
+              <label for="male">Masculino</label>
+              <input type="radio" name="gender" id="male" value="male">
+           </div>
+           <div>
+              <label for="female">Femenino</label>
+              <input type="radio" name="gender" id="female" value="female">
+           </div>
+        </div>
+      </fieldset>
+      <fieldset>
+         <legend>Info Tributaria</legend>
+        <div>
+           <label for="eyeColor">Color de Ojos</label>
+           <select name="eyeColor" id="eyeColor" multiple>
+              <option value="Green" label="Verde"></option>
+              <option value="Red" label="Rojo" ></option>
+              <option value="Black" label="Negro"></option>
+           </select>
+        </div>
+        <div>
+           <label for="bio">Bio</label>
+           <textarea id="bio" name="bio"></textarea>
+        </div>
+        <div>
+           <label for="file">Subir Archivo</label>
+           <input id="file" type="file" name="file">
+        </div>
+        <div>
+           <label for="phone">Teléfono</label>
+           <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+           <label for="url">URL</label>
+           <input type="url" name="url" id="url">
+        </div>
+        <div>
+           <label for="color">Color</label>
+           <input type="color" name="color" id="color">
+        </div>
+        <div>
+           <label>Password</label>
+           <input type="password" name="password" id="password" required>
+        </div>
+      </fieldset>
+        <input type="reset" value="Reiniciar Formulario"></input>
+        <input type="submit" value="Enviar Formulario"></input>
+     </form>
+           
+</body>
+</html>
